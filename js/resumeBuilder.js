@@ -11,11 +11,11 @@ var bio = {
       "mobile" : "5122553752 ",
       "email" : "liz.garcesr@gmail.com ",
       "github" : "lizgarces",
-      "twitter" : "@babyloosy",
+      "linkedin" : "elizabeth-garces-283723",
       "location" : "Round Rock, TX"
     },
-  "skills" : ["Programming", "Design", "JS", "Management"]
-}
+  "skills" : ["Programming", "Design", "JS", "Management", "HTML"]
+};
 
 var work = {
   "jobs" : [
@@ -24,14 +24,14 @@ var work = {
       "title" : "Project Manager",
       "location" : "Monterrey Nuevo Leon Mexico",
       "dates" : "1992-2001",
-      "description" : "Project manager of investments system and funds transfer system. Both projects where instaled nation-wide in Mexico."
+      "description" : "Project manager of investments system and funds transfer system. Both projects were installed nationwide in Mexico."
     },
     {
       "employer" : "Purple Mart",
       "title" : "Manager",
       "location" : "Round Rock TX",
       "dates" : "2010 to date",
-      "description" : "On line store. Control of merchandise, seller, distribution of merchandise."
+      "description" : "On line store. Control, sales, shipping and distribution of merchandise."
     },
     {
       "employer" : "Zadre studios",
@@ -40,132 +40,120 @@ var work = {
       "dates" : "2015 to date",
       "description" : "Apps and game Developer. Worked with Unity and Photoshop to build apps."
     }
- ]
-}
+  ]
+};
 
 var education = {
  	"schools": [
-      {
-     		"name" : "ITESM",
-        "location" : "Monterrey Nuevo Leon Mexico",
-        "degree" : "Computer Science",
-        "dates" : 1992,
-        "url" : "https://tec.mx/",
-        "majors" : ["CS"]
- 	    },
-      {
-     		"name" : "Rediscover Happiness",
-     		"location" : "Austin TX",
-        "degree" : "Facilitator",
-        "dates" : 2016,
-        "url" : "https://www.facebook.com/AustinCentroAlaya/",
-        "majors" : ["Speaker"]
- 	    }
-    ]
- ,
-  "onLineCourses" : [
     {
-        "title" : "Product Specialist",
-        "school" : "Microsoft Certification Sql server",
-        "dates" : 1999,
-        "url" : "https://www.microsoft.com/en-us/learning/certification-overview.aspx"
+      "name" : "ITESM, Instituto Tecnologico y de Estudios Superiores de Monterrey",
+      "location" : "Monterrey Nuevo Leon Mexico",
+      "degree" : "Computer Science",
+      "dates" : 1992,
+      "url" : "https://tec.mx/",
+      "major" : ["CS"]
+ 	   }
+  ],
+  "onlineClasses" : [
+    {
+      "title" : "2d Bitmap art for video games (Photoshop)",
+      "school" : "Udemy",
+      "dates" : 2016,
+      "url" : "https://www.udemy.com/2d-bitmap-art-for-video-games/"
     },
     {
-        "title" : "Front end developer",
-        "school" : "Udacity",
-        "dates" : 2016,
-        "url" : "https://www.udacity.com"
+      "title" : "Front-End Web Developer Nanodegree",
+      "school" : "Udacity",
+      "dates" : 2016,
+      "url" : "https://www.udacity.com"
     }
   ]
-}
+};
 
 var projects = {
   "projects" : [
     {
       "title" : "Deluxe 15",
       "dates" : "2016",
-      "description" : "Classic 15 puzzle game with great images. You can see birds, sports articles, purses, girl's shoes and yummi fruits",
-      "images" : ["images/flying.jpg", "images/me.jpg"]
+      "description" : "Classic 15 puzzle game with great images. You can see cute birds, colorfull butterflies, sports articles, trendy purses or handbags, great girl's shoes and yummi fruits.",
+      "images" : ["images/deluxe15.jpg", "images/deluxegame.jpg"]
     },
     {
       "title" : "Bird card",
       "dates" : 2016,
-      "description" : "Information about an amazing bird: parrakets. You will find information about theis beautiful bird.",
-      "images" : ["images/birdcotorrito.png", "images/a.jpg"]
+      "description" : "Information about an amazing bird: parrakets. You will find information about this beautiful bird.",
+      "images" : ["images/parraket.jpg"]
     }
   ]
-}
+};
 
 //header
-function displayBasicInfo () {
-    var formattedRole = HTMLheaderRole.replace("%data%","Web Developer Unlimited");
-    $("#header").prepend(formattedRole);
 
-    var formattedName = HTMLheaderName.replace("%data%", "Liz Garces");
-    $("#header").prepend(formattedName);
+bio.display = function() {
 
-    var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
-    $("#topContacts,#footerContacts").append(formattedLocation);
+  var formattedRole = HTMLheaderRole.replace("%data%","Web Developer Unlimited");
+  $("#header").prepend(formattedRole);
 
-    var formattedTwitter = HTMLtwitter.replace("%data%",bio.contacts.twitter);
-    $("#topContacts,#footerContacts").append(formattedTwitter);
+  var formattedName = HTMLheaderName.replace("%data%", "Liz Garces");
+  $("#header").prepend(formattedName);
 
-    var formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
-    $("#topContacts,#footerContacts").append(formattedGithub);
+  var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
+  $("#topContacts,#footerContacts").append(formattedLocation);
 
-    var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
-    $("#topContacts,#footerContacts").append(formattedEmail);
+  var formattedLinkedin = HTMLlinkedin.replace("%data%",bio.contacts.linkedin);
+  $("#topContacts,#footerContacts").append(formattedLinkedin);
 
-    var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
-    $("#topContacts,#footerContacts").append(formattedMobile);
+  var formattedGithub = HTMLgithub.replace("%data%",bio.contacts.github);
+  $("#topContacts,#footerContacts").append(formattedGithub);
 
-    var formattedPic = HTMLbioPic.replace("%data%",bio.bioPic);
-    $("#header").append(formattedPic);
+  var formattedEmail = HTMLemail.replace("%data%",bio.contacts.email);
+  $("#topContacts,#footerContacts").append(formattedEmail);
 
-    var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
-    $("#header").append(formattedwelcomeMsg);
-}
+  var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+  $("#topContacts,#footerContacts").append(formattedMobile);
 
-displayBasicInfo ();
+  var formattedPic = HTMLbioPic.replace("%data%",bio.bioPic);
+  $("#header").append(formattedPic);
 
-//skills at glance section
+  var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
+  $("#header").append(formattedwelcomeMsg);
 
-bio.addSkills = function() {
-    if (bio.skills.length > 0) {
-        $("#header").append(HTMLskillsStart);
-          for (skill in bio.skills) {
-              $("#skills").append(HTMLskills.replace("%data%",bio.skills[skill]));
-          }
-    }
-}
+  if (bio.skills.length > 0) {
+      $("#header").append(HTMLskillsStart);
 
-bio.addSkills();
-
-//jobs section
-
-function displayWork () {
-    for (var job = 0; job < work.jobs.length; job++) {
-        $("#workExperience").append(HTMLworkStart);
-
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-        var formattedEmployerTitle = formattedEmployer + formattedTitle;
-        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-
-        $(".work-entry:last").append(formattedEmployerTitle);
-        $(".work-entry:last").append(formattedDates);
-        $(".work-entry:last").append(formattedDescription);
-      }
+        for (var skill = 0; skill < bio.skills.length; skill++) {
+            $("#skills").append(HTMLskills.replace("%data%",bio.skills[skill]));
+        }
   }
+};
 
-  displayWork();
+bio.display();
+
+/* $("#main").append(work.position);*/
+work.display = function() {
+
+  for (var job = 0; job < work.jobs.length; job++) {
+      $("#workExperience").append(HTMLworkStart);
+
+      var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+      var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+      var formattedEmployerTitle = formattedEmployer + formattedTitle;
+      var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+      var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+
+      $(".work-entry:last").append(formattedEmployerTitle);
+      $(".work-entry:last").append(formattedDates);
+      $(".work-entry:last").append(formattedDescription);
+    }
+};
+
+work.display();
 
   //anonymous function
-  $(document).click(function(loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-    logClicks(x,y);
+$(document).click(function(loc) {
+  var x = loc.pageX;
+  var y = loc.pageY;
+  logClicks(x,y);
   }
 );
 
@@ -180,12 +168,13 @@ function inName() {
     twoNames[0] = twoNames[0].slice(0,1).toUpperCase() + twoNames[0].slice(1).toLowerCase();
     finalName = twoNames.join(" ");
     return finalName;
-}
+};
 
 //display projects
 
 projects.display = function() {
-  for (project in projects.projects) {
+
+  for (var project = 0; project < projects.projects.length; project++) {
       $("#projects").append(HTMLprojectStart);
 
       var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
@@ -198,19 +187,60 @@ projects.display = function() {
       $(".project-entry:last").append(formattedDescription);
 
       if (projects.projects[project].images.length > 0) {
-          for (image in projects.projects[project].images) {
+          for (var image = 0; image < projects.projects[project].images.length; image++) {
               var formattedImages = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
               $(".project-entry:last").append(formattedImages);
-           }
+          }
       }
-    }
-}
+  }
+};
 
 projects.display();
 
-// display a map qith the places that i have been
+// display a map with the places that i have been
 
 $("#mapDiv").append(googleMap);
 
-/* $("#main").append(work.position);*/
 /*$("#main").append(education["name"]);*/
+
+education.display = function() {
+
+  for (var school = 0; school < education.schools.length; school++) {
+      $("#education").append(HTMLschoolStart);
+
+      var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+      $(".education-entry:last").append(formattedSchoolName);
+
+      var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+      $(".education-entry:last").append(formattedSchoolDegree);
+
+      var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+      $(".education-entry:last").append(formattedSchoolDates);
+
+      var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+      $(".education-entry:last").append(formattedSchoolLocation);
+
+      var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+      $(".education-entry:last").append(formattedSchoolMajor);
+    }
+
+  $(".education-entry:last").append(HTMLonlineClasses);
+
+  for (var onlineClass = 0; onlineClass < education.onlineClasses.length; onlineClass++) {
+
+    var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineClasses[onlineClass].title);
+    $(".education-entry:last").append(formattedOnlineTitle);
+
+    var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineClasses[onlineClass].school);
+    $(".education-entry:last").append(formattedOnlineSchool);
+
+    var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineClasses[onlineClass].dates);
+    $(".education-entry:last").append(formattedOnlineDates);
+
+    var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineClasses[onlineClass].url);
+    $(".education-entry:last").append(formattedOnlineURL);
+  }
+
+};
+
+education.display();
