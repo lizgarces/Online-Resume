@@ -2,7 +2,7 @@
 ___
 This project is part of the Front-End Web Nanodegree program of Udacity
 
-##Project Details
+## Project Details
 ___
 This propject was designed to practice working with Javascrip objetcs and Google maps API.
 
