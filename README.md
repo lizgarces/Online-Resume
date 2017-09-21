@@ -1,5 +1,5 @@
 # Online Resume
-___
+
 This project is part of the Front-End Web Nanodegree program of Udacity.
 
 ## Project Details
