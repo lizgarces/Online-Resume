@@ -20,7 +20,7 @@ https://lizgarces.github.io/Online-Resume/
 ___
 - Please make sure that all the files were copied in the correct folder.
 - This project was made and tested in Google Chrome, Windows 10 home. Any other platform / configuration may present problems during the execution.
-- The Google map is not showing information about my work places. This is because the Google API needs a confidential KEY to wotk that is not included in this files fro security.
+- The Google map is not showing information about my work places. This is because the Google API needs a confidential KEY to work that is not included in this files fro security.
 
 ## License
 ___
