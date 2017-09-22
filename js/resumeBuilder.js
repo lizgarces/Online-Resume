@@ -6,10 +6,10 @@ var bio = {
   "name" : "Liz Garces",
   "role" : "Front End Developer",
   "contacts" : {
-      "mobile" : "5122553333",
-      "email" : "liz.garcesr@gmail.com ",
+      "mobile" : "5122553752",
+      "email" : "liz_garcesr@yahoo.com ",
       "github" : "lizgarces",
-      "linkedin" : "elizabeth-garces-283723",
+      "linkedin" : "elizabeth-garces",
       "location" : "Round Rock, TX"
   },
   "welcomeMessage" : "Happy to help you!",
